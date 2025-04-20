@@ -16,7 +16,7 @@ runs:
   using: composite
   steps:
     - shell: bash
-      run: prinenv | sort
+      run: printenv | sort
     - if: ${{ inputs.enable-context }}
       shell: bash
       env:
